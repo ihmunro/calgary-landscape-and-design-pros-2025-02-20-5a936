@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calgary Landscape and Design Pros | Custom Landscaping Services</title>
     <meta name="description" content="Professional landscaping services in Calgary. Custom designs, local expertise, and comprehensive services for your outdoor space.">
+    <meta name="keywords" content="calgary landscape, landscaping, garden design, lawn care, irrigation systems">
+    <meta property="og:title" content="Calgary Landscape and Design Pros">
+    <meta property="og:description" content="Professional landscaping services in Calgary. Custom designs, local expertise, and comprehensive services for your outdoor space.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Calgary Landscape and Design Pros">
+    <meta name="twitter:description" content="Professional landscaping services in Calgary. Custom designs, local expertise, and comprehensive services for your outdoor space.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        .mobile-menu.hidden {
+            display: none;
+        }
+        [data-aos] {
+            pointer-events: none;
+        }
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .mobile-menu-button {
+                display: block;
+            }
+        }
+    </style>
+    <link href="styles/main.css" rel="stylesheet">
 </head>
 <body class="font-sans antialiased text-gray-800 bg-white">
     <!-- Header -->
@@ -108,7 +134,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div data-aos="fade-right">
-                    <img src="https://via.placeholder.com/600x400" alt="Beautiful Landscape" class="rounded-lg shadow-md">
+                    <img src="https://source.unsplash.com/600x400/?landscape,garden" alt="Beautiful Landscape" class="rounded-lg shadow-md">
                 </div>
                 <div data-aos="fade-left">
                     <ul class="space-y-4">
@@ -169,7 +195,7 @@
                     <p class="text-gray-700">We pride ourselves on our attention to detail, exceptional customer service, and commitment to using sustainable practices. Whether you need a complete landscape design, garden installation, or ongoing lawn care, we have the expertise and resources to meet your needs.</p>
                 </div>
                 <div data-aos="fade-left">
-                    <img src="https://via.placeholder.com/600x400" alt="Our Team" class="rounded-lg shadow-md">
+                    <img src="https://source.unsplash.com/600x400/?team,landscaping" alt="Our Team" class="rounded-lg shadow-md">
                 </div>
             </div>
         </div>
@@ -220,7 +246,7 @@
     <footer class="bg-gray-50 py-12">
         <div class="container mx-auto px-4 text-center">
             <p class="text-gray-700">
-                &copy; 2024 Calgary Landscape. All rights reserved.
+                &copy; <script>document.write(new Date().getFullYear())</script> Calgary Landscape. All rights reserved.
             </p>
         </div>
     </footer>
@@ -260,5 +286,17 @@
             }
         });
     </script>
+    <script type="text/babel" src="components/HelloMessage.js"></script>
+    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="utils/mobileMenu.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/Benefits.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/FAQ.js"></script>
+    <script type="text/babel" src="components/CTA.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
 </body>
 </html>
